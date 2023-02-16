@@ -5,12 +5,13 @@ public interface ICanBeHeld
 {
     bool BeingHeld { get; }
     void MoveTo(Vector3 position);
+    void BeHeldBy(GameObject holder);
     void Clear();
 }
 
 public interface ICanHold
 {
-    void Hold(GameObject g);
+    void Hold(GameObject holdee);
 }
 
 public interface IHaveLetter
